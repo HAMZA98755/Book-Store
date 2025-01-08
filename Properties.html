@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>properties html
+        </title>
+        <script src="myfunction.js"></script>
+    </head>
+    <body>
+        <div class="bayan">
+            <button onclick="window.location.href='home.html.html'">HOME</button>
+            <button onclick="window.location.href='AbutUs.html'">ABOUT US</button>
+         </div>
+        <div class="container">
+            <h2>قائمة الكتب </h2>
+            <table border>
+                <thead>
+                    <tr>
+                        <th>رمز الكتاب </th>
+                        <th>العنوان </th>
+                        <th>السعر </th>
+                        <th>إظهار التفاصيل</th>
+                        <th>اختيار</th>
+                    </tr>
+                </thead>
+                <tbody id="property-details">
+                    <tr>
+                        <td>978_9770916738</td>
+                        <td> ألف ليلة وليلة   </td>
+                        <td>25.000 ل.س</td>
+                        <td><button class="show-details-btn" data-index="0">تفاصيل</button></td>
+                        <td><label for="property-radio"> </label>
+                        <input type="radio" name="property-choice" class="property-radio" data-index="0"></td>
+                    </tr>
+                    <tr class="expanded-details">
+                        <td colspan="10">
+                        <div class="details-content" id="details-content-0">
+                        <p>الناشر : دار المعارف </p>
+                        <p>التصنيف :قصص شعبية </p>
+                        <p>ملخص : مجموعة قصص شعبية </p>
+                        <div class="images-container" id="images-container-0"> <img src="./IMG/3.jpg">
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>978_9770916740</td>
+                        <td>رواية الغريب </td>
+                        <td>50.000 ل.س</td> 
+                        <td><button class="show-details-btn" data-index="1">تفاصيل</button></td>
+                        <td><label for="property-radio"> </label>
+                        <input type="radio" name="property-choice" class="property-radio" data-index="1"></td>
+                    </tr>
+                    <tr class="expanded-details">
+                        <td colspan="10">
+                        <div class="details-content" id="details-content-1">
+                            <p>الناشر : دار شمس </p>
+                            <p>التصنيف : روايات فلسفية </p>
+                            <p> ملخص : رواية عن الغربة والوجودية </p>
+                            <p> الكاتب : البير كامو </p>
+                            <div class="wimages-container" id="images-container-1"></div><img src="./IMG/4.jpg" id="y">
+                             
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>978_9770916741</td>
+                        <td> التفكير السريع والبطيئ</td>
+                        <td>20.000 ل.س</td>
+                        <td><button class="show-details-btn" data-index="2">تفاصيل</button></td>
+                        <td><label for="property-radio"> </label>
+                        <input type="radio" name="property-choice" class="property-radio" data-index="2"></td>
+                    </tr>
+                    <tr class="expanded-details">
+                        <td colspan="10">
+                        <div class="details-content" id="details-content-2"><p>المنطقة:المشروع السادس</p>
+                            <p> الناشر : دار المعرفة </p>
+                            <p>التصنيف : تطوير الذات </p>
+                            <p>  الملخص : كتاب يشرح كيفة عمل العقل البشري  </p>
+                            <div class="images-container" id="images-container-2"><img src="./IMG/5.jpg"></div>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>978_9770916746 </td>
+                        <td>الأمير  </td>
+                        <td>22.000 ل.س </td>
+                        <td><button class="show-details-btn" data-index="3">تفاصيل</button></td>
+                        <td><label for="property-radio"> </label>
+                        <input type="radio" name="property-choice" class="property-radio" data-index="3"></td>
+                    </tr>
+                    <tr class="expanded-details">
+                        <td colspan="10">
+                        <div class="details-content" id="details-content-3">
+                            <p> الناشر: دار جمل </p>
+                            <p> التصنيف : كتب سياسية </p>
+                            <p>الملخص نص كلاسيكي عن السياسة والحكم </p>
+                        
+                            <div class="images-container" id="images-container-3"><img src="./IMG/6.jpg"></div>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>978_9770916750</td>
+                        <td>اني اتعفن رعبا </td>
+                        <td>50.000 ل.س</td>
+                        <td><button class="show-details-btn" data-index="4">تفاصيل</button></td>
+                        <td><label for="property-radio"> </label>
+                        <input type="radio" name="property-choice" class="property-radio" data-index="4"></td>
+                    </tr><tr class="expanded-details">
+                        <td colspan="10">
+                        <div class="details-content" id="details-content-4">
+                            <p>الناشر : </p>
+                            <p>التصنيف : رعب </p>
+                            <p> الملخص : يتكلم عن شابة تعاني من مرض نفسي </p>
+                            <div class="images-container" id="images-container-4"><img src="./IMG/7.jpg"></div>
+                        </div>
+                       
+    
+                    </tbody>
+                </table>
+        
+                <div id="formContainer">
+                    <form id="userDataForm">
+                        <div>
+                            <label for="username">أسم المستخدم:</label>
+                            <input type="text" id="username" name="username" placeholder="أدخل اسمك بالعربية" required="">
+                        </div>
+                        <div>
+                            <label for="nationalId">الرقم الوطني:</label>
+                            <input type="text" id="nationalId" name="nationalId" placeholder="رقم الهوية" required="" minlength="11" maxlength="11">
+                        </div>
+                        <div>
+                            <label for="dob">تاريخ الميلاد:</label>
+                            <input type="text" id="dob" name="dob" placeholder="dd-mm-yyyy" pattern="\d{2}-\d{2}-\{4}" required="">
+                        </div>
+                        <div>
+                            <label for="phoneNumber">رقم الموبايل:</label>
+                            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="09XXXXXXXX" pattern="09\d{8}" required="">
+                        </div>
+                        <div>
+                            <label for="email">البريد الإلكتروني:</label>
+                            <input type="email" id="email" name="email" placeholder="example@example.com" required="">
+                        </div>
+                        <button type="submit">إرسال</button>
+                        <button type="button" onclick="cancelForm()">إلغاء</button>
+                      
+                    </form>
+                    
+    
+                </div>
+        
+                <center>
+                    <button class="BU" onclick="showForm()">متابعة</button>
+                  </center>
+                  
+        
+                   </div>
+    
+                    
+                      </html>
+                       
